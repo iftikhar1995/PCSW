@@ -1,0 +1,369 @@
+﻿@{
+    ViewBag.Title = "Part1";
+    Layout = "~/Views/Shared/_PCSWLayout.cshtml";
+}
+
+
+
+<div class="row content_area">
+    <div class="col-md-offset-1 col-md-11">
+
+        <!--Department and District Picker -->
+        
+        
+        <div class="row">
+            <!--First Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-2">
+                        District:
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DropDownList("yearPickerPart2", PCSW.Controllers.GIMSController.GetDropDownListForYears(), "Select Year", new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_1">
+                        <p id="numGazettedOfficersMaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-3">
+                        Province :
+                    </div>
+                    <div class="col-md-6">
+                        @Html.DropDownList("yearPickerPart2", PCSW.Controllers.GIMSController.GetDropDownListForYears(), "Select Year", new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_2">
+                        <p id="numGazettedOfficersFemaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <!-- Number of Gazetted Officers-->
+
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of Gazetted Officers __________________________________________________________________________</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--First Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-2">
+                        Males :
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Males" class="form-control" id="numGazettedOfficersMale" name="numGazettedOfficersMale" min="0"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_1">
+                        <p id="numGazettedOfficersMaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-3">
+                        Females :
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Females" class="form-control" id="numGazettedOfficersFemale" name="numGazettedOfficersFemale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_2">
+                        <p id="numGazettedOfficersFemaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Number of None Gazetted Officers-->
+
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of None Gazetted Officers/Officials _________________________________________________________</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--First Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-2">
+                        Males :
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Males" class="form-control" id="numNoneGazettedOfficersMale" name="numNoneGazettedOfficersMale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_1">
+                        <p id="numNoneGazettedOfficersMaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-3">
+                        Females :
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Females" class="form-control" id="numNoneGazettedOfficersFemale" name="numNoneGazettedOfficersFemale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_2">
+                        <p id="numNoneGazettedOfficersFemaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Number of  Employees Inducted on Contractual Basis-->
+
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of Employees Inducted on Contractual Basis ______________________________________________</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--First Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-2">
+                        Males :
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Males" class="form-control" id="numContractEmployeeMale" name="numContractEmployeeMale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_1">
+                        <p id="numContractEmployeeMaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-3">
+                        Females :
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Females" class="form-control" id="numContractEmployeeFemale" name="numContractEmployeeFemale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_2">
+                        <p id="numContractEmployeeFemaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Number of  Women Friendly amenities in public offices-->
+
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of  Women Friendly Amenities in Public Offices ___________________________________________</p>
+            </div>
+        </div>
+        <div class="row womenFriendlyAmenitiesDiv">
+            <!--First Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-4">
+                        <p class="text-center">Seperate Washrooms :</p>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="number" placeholder="Washrooms" class="form-control washroomsInput" id="numSeperateWashroomsFemale" name="numContractEmployeeMale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_1_washroom">
+                        <p id="numSeperateWashroomsFemaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Second Coloumn-->
+            <div class="col-md-5">
+                <div class="row">
+                    <div class="col-md-offset-1 col-md-4">
+                        <p class="text-center">Seperate Prayer Area :</p>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" placeholder="Prayer Areas" class="form-control seperatePrayerAreaInput" id="numSeperatePrayerAreaFemale" name="numContractEmployeeFemale" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-* err_part_1_col_2_prayer_room">
+                        <p id="numSeperatePrayerAreaFemaleErr" class="text text-danger"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-3 col-md-4">
+                <button class="btn btn-primary btn_next_part_1" id="btn_next_part_1">Next</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+            var gazettedMaleErr = $("#numGazettedOfficersMaleErr");
+            var gazettedFemaleErr = $("#numGazettedOfficersFemaleErr");
+
+            var noneGazettedMaleErr = $("#numNoneGazettedOfficersMaleErr");
+            var noneGazettedFemaleErr = $("#numNoneGazettedOfficersFemaleErr");
+
+            var contractMaleErr = $("#numContractEmployeeMaleErr");
+            var contractFemaleErr = $("#numContractEmployeeFemaleErr");
+
+            var seperateWashroomFemaleErr = $("#numSeperateWashroomsFemaleErr");
+            var seperatePrayerRoomFemaleErr = $("#numSeperatePrayerAreaFemaleErr");
+
+            $("#btn_next_part_1").click(function () {
+                if (checkInputData()) {
+
+                    gazettedMale = $("#numGazettedOfficersMale").val();
+                    gazettedFemale = $("#numGazettedOfficersFemale").val();
+
+                    noneGazettedMale = $("#numNoneGazettedOfficersMale").val();
+                    noneGazettedFemale = $("#numNoneGazettedOfficersFemale").val();
+
+                    contractMale = $("#numContractEmployeeMale").val();
+                    contractFemale = $("#numContractEmployeeFemale").val();
+
+                    
+                    sessionStorage.gazettedMale = gazettedMale;
+                    sessionStorage.gazettedFemale = gazettedFemale;
+
+                    sessionStorage.noneGazettedMale = noneGazettedMale;
+                    sessionStorage.noneGazettedFemale = noneGazettedFemale;
+
+                    sessionStorage.contractMale = contractMale;
+                    sessionStorage.contractFemale = contractFemale;
+
+                    sessionStorage.washroomsFemale = $("#numSeperateWashroomsFemale").val();
+                    sessionStorage.prayerRoomsFemale = $("#numSeperatePrayerAreaFemale").val();
+                        
+                    sessionStorage.TotalNumberOfWomen = Number(gazettedFemale) + Number(noneGazettedFemale) + Number(contractFemale);
+                    sessionStorage.TotalNumberOfMen = Number(gazettedMale) + Number(noneGazettedMale) + Number(contractMale);
+
+                    sessionStorage.Part1 = "done";
+
+                    window.location.href = '@Url.Action("Part2", "GIMS")';
+                }
+            });
+
+            function checkInputData() {
+
+                clearAllErrors();
+
+                var gazettedMale = $("#numGazettedOfficersMale").val();
+                if (!(/^\d+$/.test(gazettedMale)) || Number(gazettedMale)<0) {
+                    gazettedMaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                var gazettedFemale = $("#numGazettedOfficersFemale").val();
+                if (!(/^\d+$/.test(gazettedFemale)) || Number(gazettedFemale) < 0) {
+                    gazettedFemaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                //---------------------------------------------------------------------------
+
+                var noneGazettedMale = $("#numNoneGazettedOfficersMale").val();
+                if (!(/^\d+$/.test(noneGazettedMale)) || Number(noneGazettedMale) < 0) {
+                    noneGazettedMaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                var noneGazettedFemale = $("#numNoneGazettedOfficersFemale").val();
+                if (!(/^\d+$/.test(noneGazettedFemale)) || Number(noneGazettedFemale) < 0) {
+                    noneGazettedFemaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                //---------------------------------------------------------------------------
+
+                var contractMale = $("#numContractEmployeeMale").val();
+                if (!(/^\d+$/.test(contractMale)) || Number(contractMale) < 0) {
+                    contractMaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                var contractFemale = $("#numContractEmployeeFemale").val();
+                if (!(/^\d+$/.test(contractFemale)) || Number(contractFemale) < 0) {
+                    contractFemaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                //---------------------------------------------------------------------------
+
+                var washroomsFemale = $("#numSeperateWashroomsFemale").val();
+                if (!(/^\d+$/.test(washroomsFemale)) || Number(washroomsFemale) < 0) {
+                    seperateWashroomFemaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                var prayerRoomsFemale = $("#numSeperatePrayerAreaFemale").val();
+                if (!(/^\d+$/.test(prayerRoomsFemale)) || Number(prayerRoomsFemale) < 0) {
+                    seperatePrayerRoomFemaleErr.html("<span>Invalid Value <br/> Please Enter a valid Number</span>")
+                    return false;
+                }
+
+                return true;
+            }
+
+            function clearAllErrors() {
+                gazettedMaleErr.text("");
+                gazettedFemaleErr.text("");
+
+                noneGazettedMaleErr.text("");
+                noneGazettedFemaleErr.text("");
+
+                contractMaleErr.text("");
+                contractFemaleErr.text("");
+
+                seperateWashroomFemaleErr.text("");
+                seperatePrayerRoomFemaleErr.text("");
+
+            }
+        });
+    </script>
+
+}

@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Download Report";
+    Layout = "~/Views/Shared/_PCSWLayout.cshtml";
+}
+
+<div class="row contentAreaDownloadView">
+    <div class="col-md-*">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-4">
+                <button class="btn btn-primary btnDownloadView" id="btnDownloadReport">Download Report</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-3 col-md-4">
+                <button class="btn btn-primary btnDownloadView" id="btnNewReport">Create New Report</button>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnDownloadReport").click(function () {
+                
+                location.href = '@Url.Action("Download" , "GIMS")?FileId=' + sessionStorage.FileId;
+            });
+
+            $("#btnNewReport").click(function () {
+                window.location.href = '@Url.Action("Index" , "GIMS")';
+            });
+        });
+    </script>
+}
+

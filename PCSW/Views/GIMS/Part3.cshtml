@@ -1,0 +1,637 @@
+﻿
+@{
+    ViewBag.Title = "Form-Part3";
+    Layout = "~/Views/Shared/_PCSWLayout.cshtml";
+}
+
+
+<div class="row content_area">
+    <div class="col-md-11">
+
+        <!--P3-->
+        <!--1-->
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of Boards/Committees/Task Forces ____________________________________________________________________________________</p>
+            </div>
+        </div>
+
+        <!--Board-->
+        <div class="row">
+            <div class="col-md-3">
+                Board(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numBoardBCT" name="numBoardBCT" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numBoardBCTErr"></p>
+            </div>
+        </div>
+
+        <!--Committee-->
+        <div class="row">
+            <div class="col-md-3">
+                Committee(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numCommitteeBCT" name="numCommitteeBCT" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numCommitteeBCTErr"></p>
+            </div>
+        </div>
+
+        <!--TaskForce-->
+        <div class="row">
+            <div class="col-md-3">
+                TaskForce(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numTaskForceBCT" name="numTaskForceBCT" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numTaskForceBCTErr"></p>
+            </div>
+        </div>
+
+        <!--2-->
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of Male Members ________________________________________________________________________________________________________</p>
+            </div>
+        </div>
+
+        <!--Board-->
+        <div class="row">
+            <div class="col-md-3">
+                Board(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numMaleBoard" name="numMaleBoard" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numMaleBoardErr"></p>
+            </div>
+        </div>
+
+        <!--Committee-->
+        <div class="row">
+            <div class="col-md-3">
+                Committee(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numMaleCommittee" name="numMaleCommittee" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numMaleCommitteeErr"></p>
+            </div>
+        </div>
+
+        <!--TaskForce-->
+        <div class="row">
+            <div class="col-md-3">
+                TaskForce(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numMaleTaskForce" name="numMaleTaskForce" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numMaleTaskForceErr"></p>
+            </div>
+        </div>
+
+        <!--3-->
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Number of Female Members ______________________________________________________________________________________________________</p>
+            </div>
+        </div>
+
+        <!--Board-->
+        <div class="row">
+            <div class="col-md-3">
+                Board(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numFemaleBoard" name="numFemaleBoard" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numFemaleBoardErr"></p>
+            </div>
+        </div>
+
+        <!--Committee-->
+        <div class="row">
+            <div class="col-md-3">
+                Committee(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numFemaleCommittee" name="numFemaleCommittee" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numFemaleCommitteeErr"></p>
+            </div>
+        </div>
+
+        <!--TaskForce-->
+        <div class="row">
+            <div class="col-md-3">
+                TaskForce(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numFemaleTaskForce" name="numFemaleTaskForce" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numFemaleTaskForceErr"></p>
+            </div>
+        </div>
+
+        <!--4-->
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Tenure of Boards/Committees/Task Forces _____________________________________________________________________________________</p>
+            </div>
+        </div>
+
+        <!--Board-->
+        <div class="row">
+            <div class="col-md-3">
+                Board(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="tenureOfBoard" name="tenureOfBoard" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="tenureOfBoardErr"></p>
+            </div>
+        </div>
+
+        <!--Committee-->
+        <div class="row">
+            <div class="col-md-3">
+                Committee(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="tenureOfCommittee" name="tenureOfCommittee" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="tenureOfCommitteeErr"></p>
+            </div>
+        </div>
+
+        <!--TaskForce-->
+        <div class="row">
+            <div class="col-md-3">
+                TaskForce(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="tenureOfTaskForce" name="tenureOfTaskForce" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="tenureOfTaskForceErr"></p>
+            </div>
+        </div>
+
+        <!--5-->
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Vacant Positions ____________________________________________________________________________________________________________________</p>
+            </div>
+        </div>
+
+        <!--Board-->
+        <div class="row">
+            <div class="col-md-3">
+                Board(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="vacantPositionsBoard" name="vacantPositionsBoard" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="vacantPositionsBoardErr"></p>
+            </div>
+        </div>
+
+        <!--Committee-->
+        <div class="row">
+            <div class="col-md-3">
+                Committee(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="vacantPositionsCommittee" name="vacantPositionsCommittee" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="vacantPositionsCommitteeErr"></p>
+            </div>
+        </div>
+
+        <!--TaskForce-->
+        <div class="row">
+            <div class="col-md-3">
+                TaskForce(s) :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="vacantPositionsTaskForce" name="vacantPositionsTaskForce" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="vacantPositionsTaskForceErr"></p>
+            </div>
+        </div>
+
+        <!--P14-->
+        <div class="row">
+            <div class="col-md-*">
+                <p class="section_heading_part1">Trainings held for Boards/Committees/Task Forces Members ________________________________________________________________</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                Number of Trainings :
+            </div>
+            <div class="col-md-5">
+                <input type="number" placeholder="Please Enter a Number ..." class="form-control" id="numMemberTrainings" name="numMemberTrainings" min="0" />
+            </div>
+            <div class="col-md-4">
+                <p class="text text-danger" id="numMemberTrainingsErr"></p>
+            </div>
+        </div>
+
+        <!--Button-->
+        <div class="row section_part_2_div">
+            <div class="col-md-offset-4 col-md-4">
+                <button class="btn btn-primary btn_next_part_2" id="btn_export_to_Excel">Export to Excel</button>
+            </div>
+            
+            <div class="col-md-4 loadingDiv" id="loadingDiv">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+@section scripts {
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+
+            //------------------------------1---------------------------------------
+            var numBoardBCTErr = $("#numBoardBCTErr");
+            var numCommitteeBCTErr = $("#numCommitteeBCTErr");
+            var numTaskForceBCTErr = $("#numTaskForceBCTErr");
+            //------------------------------2---------------------------------------
+            var numMaleBoardErr = $("#numMaleBoardErr");
+            var numMaleCommitteeErr = $("#numMaleCommitteeErr");
+            var numMaleTaskForceErr = $("#numMaleTaskForceErr");
+            //------------------------------3---------------------------------------
+            var numFemaleBoardErr = $("#numFemaleBoardErr");
+            var numFemaleCommitteeErr = $("#numFemaleCommitteeErr");
+            var numFemaleTaskForceErr = $("#numFemaleTaskForceErr");
+            //------------------------------4---------------------------------------
+            var tenureOfBoardErr = $("#tenureOfBoardErr");
+            var tenureOfCommitteeErr = $("#tenureOfCommitteeErr");
+            var tenureOfTaskForceErr = $("#tenureOfTaskForceErr");
+            //------------------------------5---------------------------------------
+            var vacantPositionsBoardErr = $("#vacantPositionsBoardErr");
+            var vacantPositionsCommitteeErr = $("#vacantPositionsCommitteeErr");
+            var vacantPositionsTaskForceErr = $("#vacantPositionsTaskForceErr");
+
+            var numMemberTrainingsErr = $("#numMemberTrainingsErr");
+
+            $("#btn_export_to_Excel").click(function () {
+                if (checkInputData()) {
+
+                    console.log("Clicked.....");
+                    $("#btn_export_to_Excel").off("click");
+                    $("#loadingDiv").html('<img src="@Url.Content("~/Content/Images/loading.gif")" alt="Please Wait..." width="214 " height="138" />');
+
+                    sessionStorage.numBoardBCT = $("#numBoardBCT").val();
+                    sessionStorage.numCommitteeBCT = $("#numCommitteeBCT").val();
+                    sessionStorage.numTaskForceBCT = $("#numTaskForceBCT").val();
+
+                    sessionStorage.numMaleBoard = $("#numMaleBoard").val();
+                    sessionStorage.numMaleCommittee = $("#numMaleCommittee").val();
+                    sessionStorage.numMaleTaskForce = $("#numMaleTaskForce").val();
+
+                    sessionStorage.numFemaleBoard = $("#numFemaleBoard").val();
+                    sessionStorage.numFemaleCommittee = $("#numFemaleCommittee").val();
+                    sessionStorage.numFemaleTaskForce = $("#numFemaleTaskForce").val();
+
+                    sessionStorage.tenureOfBoard = $("#tenureOfBoard").val();
+                    sessionStorage.tenureOfCommittee = $("#tenureOfCommittee").val();
+                    sessionStorage.tenureOfTaskForce = $("#tenureOfTaskForce").val();
+
+                    sessionStorage.vacantPositionsBoard = $("#vacantPositionsBoard").val();
+                    sessionStorage.vacantPositionsCommittee = $("#vacantPositionsCommittee").val();
+                    sessionStorage.vacantPositionsTaskForce = $("#vacantPositionsTaskForce").val();
+
+                    sessionStorage.numMemberTrainings = $("#numMemberTrainings").val();
+
+                    writeXlsFile();
+
+                }
+            });
+
+
+
+            function removeAllFromSS() {
+                //--------------------------Index--------------------------------------------------
+                sessionStorage.removeItem("focalPerson");
+                sessionStorage.removeItem("contactNumber");
+
+                //--------------------------Part1--------------------------------------------------
+                sessionStorage.removeItem("gazettedMale");
+                sessionStorage.removeItem("gazettedFemale");
+
+                sessionStorage.removeItem("noneGazettedMale");
+                sessionStorage.removeItem("noneGazettedFemale");
+
+                sessionStorage.removeItem("contractMale");
+                sessionStorage.removeItem("contractFemale");
+
+                sessionStorage.removeItem("washroomsFemale");
+                sessionStorage.removeItem("prayerRoomsFemale");
+
+                //--------------------------Part2--------------------------------------------------
+                sessionStorage.removeItem("numAgeRelexation3");
+                sessionStorage.removeItem("numMaternityLeave");
+                sessionStorage.removeItem("numPaternityLeave");
+                sessionStorage.removeItem("numSelectionContractualCommittee");
+                sessionStorage.removeItem("numComplaintsReceived");
+                sessionStorage.removeItem("numActionsTaken");
+                sessionStorage.removeItem("GMC");
+                sessionStorage.removeItem("COCPunjabProtection");
+                sessionStorage.removeItem("workplaceHarassmentCommittees");
+
+                //--------------------------Part3--------------------------------------------------
+                sessionStorage.removeItem("numBoardBCT");
+                sessionStorage.removeItem("numCommitteeBCT");
+                sessionStorage.removeItem("numTaskForceBCT");
+
+                sessionStorage.removeItem("numMaleBoard");
+                sessionStorage.removeItem("numMaleCommittee");
+                sessionStorage.removeItem("numMaleTaskForce");
+
+                sessionStorage.removeItem("numFemaleBoard");
+                sessionStorage.removeItem("numFemaleCommittee");
+                sessionStorage.removeItem("numFemaleTaskForce");
+
+                sessionStorage.removeItem("tenureOfBoard");
+                sessionStorage.removeItem("tenureOfCommittee");
+                sessionStorage.removeItem("tenureOfTaskForce");
+
+                sessionStorage.removeItem("vacantPositionsBoard");
+                sessionStorage.removeItem("vacantPositionsCommittee");
+                sessionStorage.removeItem("vacantPositionsTaskForce");
+
+                sessionStorage.removeItem("numMemberTrainings");
+            }
+
+
+            function checkAllStoredData() {
+
+
+                //--------------------------Index--------------------------------------------------
+                alert("sessionStorage.focalPerson : " + sessionStorage.focalPerson);
+                alert("sessionStorage.contactNumber : " + sessionStorage.contactNumber);
+
+                //--------------------------Part1--------------------------------------------------
+                alert("sessionStorage.gazettedMale : " + sessionStorage.gazettedMale);
+                alert("sessionStorage.gazettedFemale : " + sessionStorage.gazettedFemale);
+
+                alert("sessionStorage.noneGazettedMale : " + sessionStorage.noneGazettedMale);
+                alert("sessionStorage.noneGazettedFemale : " + sessionStorage.noneGazettedFemale);
+
+                alert("sessionStorage.contractMale : " + sessionStorage.contractMale);
+                alert("sessionStorage.contractFemale : " + sessionStorage.contractFemale);
+
+                alert("sessionStorage.washroomsFemale : " + sessionStorage.washroomsFemale);
+                alert("sessionStorage.prayerRoomsFemale : " + sessionStorage.prayerRoomsFemale);
+
+                //--------------------------Part2--------------------------------------------------
+                alert("sessionStorage.numAgeRelexation3 : " + sessionStorage.numAgeRelexation3);
+                alert("sessionStorage.numMaternityLeave : " + sessionStorage.numMaternityLeave);
+                alert("sessionStorage.numPaternityLeave : " + sessionStorage.numPaternityLeave);
+                alert("sessionStorage.numSelectionContractualCommittee : " + sessionStorage.numSelectionContractualCommittee);
+                alert("sessionStorage.numComplaintsReceived : " + sessionStorage.numComplaintsReceived);
+                alert("sessionStorage.numActionsTaken : " + sessionStorage.numActionsTaken);
+                alert("sessionStorage.GMC : " + sessionStorage.GMC);
+                alert("sessionStorage.COCPunjabProtection : " + sessionStorage.COCPunjabProtection);
+                alert("sessionStorage.workplaceHarassmentCommittees : " + sessionStorage.workplaceHarassmentCommittees);
+
+                //--------------------------Part3--------------------------------------------------
+                alert("sessionStorage.numBoardBCT : " + sessionStorage.numBoardBCT);
+                alert("sessionStorage.numCommitteeBCT : " + sessionStorage.numCommitteeBCT);
+                alert("sessionStorage.numTaskForceBCT : " + sessionStorage.numTaskForceBCT);
+
+                alert("sessionStorage.numMaleBoard : " + sessionStorage.numMaleBoard);
+                alert("sessionStorage.numMaleCommittee : " + sessionStorage.numMaleCommittee);
+                alert("sessionStorage.numMaleTaskForce : " + sessionStorage.numMaleTaskForce);
+
+                alert("sessionStorage.numFemaleBoard : " + sessionStorage.numFemaleBoard);
+                alert("sessionStorage.numFemaleCommittee : " + sessionStorage.numFemaleCommittee);
+                alert("sessionStorage.numFemaleTaskForce : " + sessionStorage.numFemaleTaskForce);
+
+                alert("sessionStorage.tenureOfBoard : " + sessionStorage.tenureOfBoard);
+                alert("sessionStorage.tenureOfCommittee : " + sessionStorage.tenureOfCommittee);
+                alert("sessionStorage.tenureOfTaskForce : " + sessionStorage.tenureOfTaskForce);
+
+                alert("sessionStorage.vacantPositionsBoard : " + sessionStorage.vacantPositionsBoard);
+                alert("sessionStorage.vacantPositionsCommittee : " + sessionStorage.vacantPositionsCommittee);
+                alert("sessionStorage.vacantPositionsTaskForce : " + sessionStorage.vacantPositionsTaskForce);
+
+                alert("sessionStorage.numMemberTrainings : " + sessionStorage.numMemberTrainings);
+            }
+
+            function checkInputData() {
+                clearAllErrors();
+
+                //------------------------------1---------------------------------------
+                var numBoardBCT = $("#numBoardBCT").val();
+                if (!(/^\d+$/.test(numBoardBCT)) || Number(numBoardBCT) < 0) {
+                    numBoardBCTErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -100);
+                    return false;
+                }
+
+                var numCommitteeBCT = $("#numCommitteeBCT").val();
+                if (!(/^\d+$/.test(numCommitteeBCT)) || Number(numCommitteeBCT) < 0) {
+                    numCommitteeBCTErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -100);
+                    return false;
+                }
+
+                var numTaskForceBCT = $("#numTaskForceBCT").val();
+                if (!(/^\d+$/.test(numTaskForceBCT)) || Number(numTaskForceBCT) < 0) {
+                    numTaskForceBCTErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -100);
+                    return false;
+                }
+
+                //------------------------------2---------------------------------------
+                var numMaleBoard = $("#numMaleBoard").val();
+                if (!(/^\d+$/.test(numMaleBoard)) || Number(numMaleBoard) < 0) {
+                    numMaleBoardErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -100);
+                    return false;
+                }
+
+                var numMaleCommittee = $("#numMaleCommittee").val();
+                if (!(/^\d+$/.test(numMaleCommittee)) || Number(numMaleCommittee) < 0) {
+                    numMaleCommitteeErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -100);
+                    return false;
+                }
+
+                var numMaleTaskForce = $("#numMaleTaskForce").val();
+                if (!(/^\d+$/.test(numMaleTaskForce)) || Number(numMaleTaskForce) < 0) {
+                    numMaleTaskForceErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -100);
+                    return false;
+                }
+
+                //------------------------------3---------------------------------------
+                var numFemaleBoard = $("#numFemaleBoard").val();
+                if (!(/^\d+$/.test(numFemaleBoard)) || Number(numFemaleBoard) < 0) {
+                    numFemaleBoardErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -50);
+                    return false;
+                }
+
+                var numFemaleCommittee = $("#numFemaleCommittee").val();
+                if (!(/^\d+$/.test(numFemaleCommittee)) || Number(numFemaleCommittee) < 0) {
+                    numFemaleCommitteeErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -50);
+                    return false;
+                }
+
+                var numFemaleTaskForce = $("#numFemaleTaskForce").val();
+                if (!(/^\d+$/.test(numFemaleTaskForce)) || Number(numFemaleTaskForce) < 0) {
+                    numFemaleTaskForceErr.html("<span>Please Enter a Valid Number</span>");
+                    window.scrollTo(0, -50);
+                    return false;
+                }
+
+                //------------------------------4---------------------------------------
+                var tenureOfBoard = $("#tenureOfBoard").val();
+                if (!(/^\d+$/.test(tenureOfBoard)) || Number(tenureOfBoard) < 0) {
+                    tenureOfBoardErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                var tenureOfCommittee = $("#tenureOfCommittee").val();
+                if (!(/^\d+$/.test(tenureOfCommittee)) || Number(tenureOfCommittee) < 0) {
+                    tenureOfCommitteeErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                var tenureOfTaskForce = $("#tenureOfTaskForce").val();
+                if (!(/^\d+$/.test(tenureOfTaskForce)) || Number(tenureOfTaskForce) < 0) {
+                    tenureOfTaskForceErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                //------------------------------5---------------------------------------
+                var vacantPositionsBoard = $("#vacantPositionsBoard").val();
+                if (!(/^\d+$/.test(vacantPositionsBoard)) || Number(vacantPositionsBoard) < 0) {
+                    vacantPositionsBoardErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                var vacantPositionsCommittee = $("#vacantPositionsCommittee").val();
+                if (!(/^\d+$/.test(vacantPositionsCommittee)) || Number(vacantPositionsCommittee) < 0) {
+                    vacantPositionsCommitteeErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                var vacantPositionsTaskForce = $("#vacantPositionsTaskForce").val();
+                if (!(/^\d+$/.test(vacantPositionsTaskForce)) || Number(vacantPositionsTaskForce) < 0) {
+                    vacantPositionsTaskForceErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                var numMemberTrainings = $("#numMemberTrainings").val();
+                if (!(/^\d+$/.test(numMemberTrainings)) || Number(numMemberTrainings) < 0) {
+                    numMemberTrainingsErr.html("<span>Please Enter a Valid Number</span>")
+                    return false;
+                }
+
+                return true;
+            }
+
+            function clearAllErrors() {
+
+                numBoardBCTErr.text("");
+                numCommitteeBCTErr.text("");
+                numTaskForceBCTErr.text("");
+
+                numMaleBoardErr.text("");
+                numMaleCommitteeErr.text("");
+                numMaleTaskForceErr.text("");
+
+                numFemaleBoardErr.text("");
+                numFemaleCommitteeErr.text("");
+                numFemaleTaskForceErr.text("");
+
+                tenureOfBoardErr.text("");
+                tenureOfCommitteeErr.text("");
+                tenureOfTaskForceErr.text("");
+
+                vacantPositionsBoardErr.text("");
+                vacantPositionsCommitteeErr.text("");
+                vacantPositionsTaskForceErr.text("");
+
+                numMemberTrainingsErr.text("");
+
+            }
+
+
+            function writeXlsFile( ) {
+                d = {
+                    focalPerson: sessionStorage.focalPerson, contactNumber: sessionStorage.contactNumber,
+                    gazettedMale: sessionStorage.gazettedMale, gazettedFemale: sessionStorage.gazettedFemale,
+                    noneGazettedMale: sessionStorage.noneGazettedMale, noneGazettedFemale: sessionStorage.noneGazettedFemale,
+                    contractMale: sessionStorage.contractMale, contractFemale: sessionStorage.contractFemale,
+                    washroomsFemale: sessionStorage.washroomsFemale, prayerRoomsFemale: sessionStorage.prayerRoomsFemale,
+                    numAgeRelexation3: sessionStorage.numAgeRelexation3, numMaternityLeave: sessionStorage.numMaternityLeave,
+                    numPaternityLeave: sessionStorage.numPaternityLeave, numSelectionContractualCommittee: sessionStorage.numSelectionContractualCommittee,
+                    numComplaintsReceived: sessionStorage.numComplaintsReceived, numActionsTaken: sessionStorage.numActionsTaken,
+                    GMC: sessionStorage.GMC, COCPunjabProtection: sessionStorage.COCPunjabProtection,
+                    workplaceHarassmentCommittees: sessionStorage.workplaceHarassmentCommittees, numBoardBCT: sessionStorage.numBoardBCT,
+                    numCommitteeBCT: sessionStorage.numCommitteeBCT, numTaskForceBCT: sessionStorage.numTaskForceBCT,
+                    numMaleBoard: sessionStorage.numMaleBoard, numMaleCommittee: sessionStorage.numMaleCommittee,
+                    numMaleTaskForce: sessionStorage.numMaleTaskForce, numFemaleBoard: sessionStorage.numFemaleBoard,
+                    numFemaleCommittee: sessionStorage.numFemaleCommittee, numFemaleTaskForce: sessionStorage.numFemaleTaskForce,
+                    tenureOfBoard: sessionStorage.tenureOfBoard, tenureOfCommittee: sessionStorage.tenureOfCommittee,
+                    tenureOfTaskForce: sessionStorage.tenureOfTaskForce, vacantPositionsBoard: sessionStorage.vacantPositionsBoard,
+                    vacantPositionsCommittee: sessionStorage.vacantPositionsCommittee, vacantPositionsTaskForce: sessionStorage.vacantPositionsTaskForce,
+                    numMemberTrainings: sessionStorage.numMemberTrainings, year: sessionStorage.year
+                };
+
+
+                var request =  $.ajax({
+                                    url: '@Url.Action("ExportToXLS", "GIMS")',
+                                    type: "POST",
+                                    data: d,
+                                    dataType: "json",
+                                    success: function (data) {
+                                        sessionStorage.FileId = data.fileId;
+                                        window.location.href = '@Url.Action("DownloadView", "GIMS")';
+                                    },
+                                    error: function () {
+                                        window.location.href = '@Url.Action("ErrorView", "GIMS")';
+                                    }
+                });
+
+
+            }
+
+
+        });
+
+
+    </script>
+}
